@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+
+
+    <nav id="desktop-nav">
+      <div class="logo">PEARSONAL PORTFOLIO</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Suhail Ahamed</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()"></div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#certification">Certification & Achievement</a></li>
+          <li><a href="#contact" onclick="scrollToContact()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    
+    
+    
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/Profile Picture.jpg" alt="Suhail Ahamed  profile picture" />
+      </div>
+
+      <div class="section__text">
+       <center>  <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Suhail Ahamed <h1>
+        <p class="section__text__p2">Full Stack  Developer</p> 
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('assets/Suhail-FullStackDeveloper-Resume.pdf')"
+          >
+            Download Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="window.open('https://www.linkedin.com/in/suhail29/', '_blank')"
+          />
+          <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="window.open('https://github.com/SuhailAhamed29', '_blank')"
+          /> </center>
+      </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/Cyber Security.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>3 months internship in  <br />Cyber Security (10/2023 - 12/2023)</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>BCA <BR>  Bachelor of Computer Applications </BR></p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p> Topic's covered
+          <br> ● Explored Internet Cables (RJ-45, RJ-11) and Modems. 
+          <br> ● Studied Vulnerability and Exploit Concepts.
+          <br> ● Gained a brief overview of Zero-day Attacks
+          <br> ● Examined Networking concepts such as WAN/LAN, IP Address, and Internet Ports.
+          <br> ● Explored Security Measures including VPN and Trojan.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+          <div class="about-containers">
+              <div class="details-container">
+                  <h1 class="experience-sub-title">Skills</h1>
+                  <div class="article-container">
+                      <article>
+                      <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                      <div>
+                      <h3>HTML</h3>
+                      </div>
+                      </article>
+                      <article>
+                      <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                      <div>
+                      <h3>CSS</h3>
+                      </div>
+                      </article>
+                      <article>
+                      <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                      <div>
+                      <h3>JavaScript</h3>
+                      </div>
+                      </article>
+                      <!-- Add more articles for other skills with icons -->
+                      <article>
+                      <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                      <div>
+                      <h3>Python</h3>
+                      </div>
+                      </article>
+                      <article>
+                      <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                      <div>
+                      <h3>Django</h3>
+                      </div>
+                      </article>
+                      <article>
+                      <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                      <div>
+                      <h3> PHP </h3>
+                      </div>
+                      </article>
+                      <!-- Add the remaining skills with their icons in a similar manner -->
+                      <article>
+                      <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                      <div>
+                      <h3>WebDevelopment</h3>
+                      </div>
+                      </article>
+                      <article>
+                      <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                      <div>
+                      <h3>AWS</h3>
+                      </div>
+                      </article>
+                      <article>
+                      <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                      <div>
+                      <h3>Linux</h3>
+                      </div>
+                      </article>
+                      <article>
+                      <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                      <div>
+                      <h3>Git-GitHub </h3>
+                      </div>
+                      </article>
+                      <article>
+                      <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                      <div>
+                      <h3>SQL-SQLite </h3>
+                      </div>
+                      </article>
+                      <article>
+                      <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                      <div>
+                      <h3>Networking </h3>
+                      </div>
+                      </article>
+                      <article>
+                      <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                      <div>
+                      <h3> CyberSecurity </h3>
+                      </div>
+                      </article>
+                      <article>
+                      <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                      <div>
+                      <h3>WAN/LAN</h3>
+                      </div>
+                      </article>
+                      <article>
+                      <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                      <div>
+                      <h3>Internet Port </h3>
+                      </div>
+                      </article>
+                      </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+          
+    <section id="projects">
+      <CEnter> <h1>PROJECTS</h1> </CEnter>
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img 
+                src="./pro/Web_Photo_Editor.jpg"
+                
+                alt="Project 1"
+                class="project-img"
+              />
+              
+            </div>
+            <h2 class="experience-sub-title project-title">ISBR COLLEGE MANAGEMENT SYSTEM</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="openGitHub()">Github</button>
+
+              <script>
+                function openGitHub() {
+                    window.open('https://github.com/SuhailAhamed29/ISBR', '_blank');
+                }
+            </script>
+              
+
+
+              <button class="btn btn-color-2 project-btn" onclick="redirectToGallery()">Gallery</button>
+            </button>
+
+            <script>
+              function redirectToGallery() {
+                  window.open('p1.html', '_blank'); // Open p1.html in a new tab
+              }
+          </script>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./pro/Picture1.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+
+
+
+            <h2 class="experience-sub-title project-title"> <BR>ATTENDANCE MANAGEMENT SYSTEM</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="openGitHub()">Github</button>
+                <script>
+                  function openGitHub() {
+                      window.open('https://github.com/SuhailAhamed29/ISBR---Attendance-Management-System-Project', '_blank');
+                  }
+              </script>
+                  <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="openInNewTab('gallery.html')"
+                  >
+                      Gallery
+                  </button>
+              </div>
+              
+              <script>
+                  function openInNewTab(url) {
+                      window.open(url, '_blank');
+                  }
+              </script>
+              <!-- <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('gallery.html', '_blank')"
+            >
+              Gallery
+            </button> -->
+            </div>
+          </div>
+          <!-- <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      
+<!-- --=========================================================================================================================================================== -->
+
+<section id="gallery">
+  <CEnter> <h1>CERTIFICATION</h1> </CEnter> 
+    <p class="section__text__p1">Explore My Gallery</p>
+    <h1 class="title">Image Gallery</h1>
+    <div id="gallery-container">
+      <div id="prev-btn">&lt;</div>
+      <div id="image-container">
+        <img class="thumbnail" src="./assets/GuviCertification -.png" alt="./assets/GuviCertification -.png">
+        <img class="thumbnail large" src="./assets/bibibkbkbkbkjbjbk.jpg" alt="Cutshort.jpg"> 
+        <img class="thumbnail" src="./assets/Internship_Completion_Certificate.jpg" alt="./assets/GuviCertification -.png">
+        <img class="thumbnail large" src="./assets/CS_Training_Completion_.jpg" alt="Cutshort.jpg"> 
+
+        <!-- Add more thumbnails as needed -->
+      </div>
+     
+    </div>
+  
+    <div id="fullscreen-overlay">
+      <div id="certificate-container"> <!-- Container for the certificate -->
+        <CENter>
+          <img id="fullscreen-image">
+          <div id="close-btn">&times;</div>
+        </CENter>
+      </div>
+    </div>
+
+      </CENter>
+        <script>
+          const thumbnails = document.querySelectorAll('.thumbnail');
+          const fullscreenOverlay = document.getElementById('fullscreen-overlay');
+          const fullscreenImage = document.getElementById('fullscreen-image');
+          const closeBtn = document.getElementById('close-btn');
+          const prevBtn = document.getElementById('prev-btn');
+          const nextBtn = document.getElementById('next-btn');
+      
+          let currentIndex = 0;
+      
+          // Display fullscreen image
+          function showFullscreenImage(index) {
+            fullscreenImage.src = thumbnails[index].src;
+            fullscreenOverlay.style.display = 'flex';
+          }
+      
+          // Close fullscreen overlay
+          function closeFullscreenImage() {
+            fullscreenOverlay.style.display = 'none';
+          }
+      
+          // Event listeners for thumbnail click
+          thumbnails.forEach((thumbnail, index) => {
+            thumbnail.addEventListener('click', () => {
+              showFullscreenImage(index);
+            });
+          });
+      
+          // Event listener for close button click
+          closeBtn.addEventListener('click', () => {
+            closeFullscreenImage();
+          });
+      
+          // Event listener for previous button click
+          prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + thumbnails.length) % thumbnails.length;
+            showFullscreenImage(currentIndex);
+          });
+      
+          // Event listener for next button click
+          nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % thumbnails.length;
+            showFullscreenImage(currentIndex);
+          });
+      
+          // Close fullscreen image on overlay click
+          fullscreenOverlay.addEventListener('click', (event) => {
+            if (event.target === fullscreenOverlay) {
+              closeFullscreenImage();
+            }
+          });
+      
+          // Keyboard navigation
+          document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+              closeFullscreenImage();
+            } else if (event.key === 'ArrowLeft') {
+              currentIndex = (currentIndex - 1 + thumbnails.length) % thumbnails.length;
+              showFullscreenImage(currentIndex);
+            } else if (event.key === 'ArrowRight') {
+              currentIndex = (currentIndex + 1) % thumbnails.length;
+              showFullscreenImage(currentIndex);
+            }
+          });
+
+          // Close fullscreen image on overlay click
+fullscreenOverlay.addEventListener('click', (event) => {
+  if (event.target === fullscreenOverlay) {
+    closeFullscreenImage();
+  }
+});
+        </script>
+      </section>
+
+    </section>
+    <br><br><br><br><br><br>
+<!-- -================================================================================================================================================================ -->
+<section id="contact">
+  <p class="section__text__p1">Get in Touch</p>
+  <h1 class="title">Contact Me</h1>
+  <div class="contact-info-upper-container">
+    <div class="contact-info-container">
+      <img
+        src="./assets/email.png"
+        alt="Email icon"
+        class="icon contact-icon email-icon"
+      />
+      <p><a href="mailto:suhailahamedd27@gmail.com">suhailahamedd27@gmail.com</a></p>
+    </div>
+    <!-- <div class="contact-info-container">
+      <img
+        src="./assets/linkedin.png"
+        alt="LinkedIn icon"
+        class="icon contact-icon"
+      />
+      <p><a href="https://www.linkedin.com/in/suhail29/" target="_blank">LinkedIn</a></p>
+    </div> -->
+    <div class="contact-info-container">
+      <img
+        src="./assets/icons8-phone-50.png"
+        alt="LinkedIn icon"
+        class="icon contact-icon"
+      />
+      <p><a href="tel:8870595877">8870595877</a></p>
+    </div>
+  </div>
+</section>
+     <!-- <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">suhailahamedd27@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com", target="_blank">LinkedIn</a></p>
+        </div>
+        
+        <div class="contact-info-container">
+          <img
+            src="./assets/icons8-phone-50.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="">8870595877</a></p>
+        </div>
+        
+      </div>
+      
+    </section>  -->
+
+    <center>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#certification">Certification</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        
+      </footer>
+    </center>
+  
+    <p>Copyright &#169; 2023 <a href="#">Suhail Ahamed</a>. All Rights Reserved.</p>
+  </body>
+</html>

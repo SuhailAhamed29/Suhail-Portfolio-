@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <style>
+    /* Add your CSS styles here */
+html{
+  background: #000;
+}
+    body {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Ensure full viewport height */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.thumbnails-container {
+  display: flex;
+  flex-wrap: nowrap; /* Ensure thumbnails stay in a single line */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  justify-content: center; /* Center thumbnails horizontally */
+}
+
+.thumbnail {
+  width: 150px;
+  height: auto;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+/* Add hover effect */
+.thumbnail:hover {
+  transform: scale(1.1); /* Increase the scale on hover */
+}
+    #fullscreen-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+    #fullscreen-image {
+      max-width: 80%;
+      max-height: 80%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Thumbnails Container -->
+  <div class="thumbnails-container">
+    <img class="thumbnail" src="./pro/Picture1.png" alt="pro/Picture1.png">
+    <img class="thumbnail" src="./pro/Picture2.png" alt="pro/Picture2.png">
+    <img class="thumbnail" src="./pro/Picture3.png" alt="pro/Picture3.png">
+    <img class="thumbnail" src="./pro/Picture4.png" alt="pro/Picture4.png">
+    <img class="thumbnail" src="./pro/Picture5.png" alt="pro/Picture5.png">
+    <img class="thumbnail" src="./pro/Picture6.png" alt="pro/Picture6.png">
+    <img class="thumbnail" src="./pro/Picture7.png" alt="pro/Picture7.png">
+    <img class="thumbnail" src="./pro/Picture8.png" alt="pro/Picture8.png">
+
+    <!-- Add more thumbnails as needed -->
+  </div>
+
+  <!-- Fullscreen Overlay -->
+  <div id="fullscreen-overlay">
+    <img id="fullscreen-image">
+    <div id="close-btn">&times;</div>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const fullscreenOverlay = document.getElementById('fullscreen-overlay');
+    const fullscreenImage = document.getElementById('fullscreen-image');
+    const closeBtn = document.getElementById('close-btn');
+
+    // Function to show fullscreen image
+    function showFullscreenImage(src) {
+      fullscreenImage.src = src;
+      fullscreenOverlay.style.display = 'flex';
+    }
+
+    // Function to close fullscreen image
+    function closeFullscreenImage() {
+      fullscreenOverlay.style.display = 'none';
+    }
+
+    // Event listeners for thumbnails
+    thumbnails.forEach((thumbnail) => {
+      thumbnail.addEventListener('click', () => {
+        showFullscreenImage(thumbnail.src);
+      });
+    });
+
+    // Event listener for close button
+    closeBtn.addEventListener('click', closeFullscreenImage);
+
+    // Close fullscreen image when overlay is clicked
+    fullscreenOverlay.addEventListener('click', (event) => {
+      if (event.target === fullscreenOverlay) {
+        closeFullscreenImage();
+      }
+    });
+  </script>
+</body>
+</html>
